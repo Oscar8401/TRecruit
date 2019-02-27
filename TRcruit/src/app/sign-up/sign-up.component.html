@@ -7,27 +7,27 @@
       <form class="col s12 white" #userRegistrationForm="ngForm">
         <div class="row">
           <div class="input-field col s6">
-            <input type="text" name="UserName">
+            <input type="text" name="UserName" [(ngModel)]="UserName">
             <label>UserName</label>
           </div>
           
           <div class="input-field col s6">
-            <input type="password" password="Password">
+            <input type="password" name="Password" [(ngModel)]="Password">
             <label>Password</label>
           </div>
 
           <div class="input-field col s6">
-            <input type="text" firstName="FirstName" required>
+            <input type="text" name="FirstName" [(ngModel)]="FirstName">
             <label>First name</label>
           </div>
 
           <div class="input-field col s6">
-            <input type="text" lastName="LastName" required>
+            <input type="text" name="LastName" [(ngModel)]="LastName">
             <label>lastName</label>
           </div>
 
           <div class="input-field col s6">
-            <input type="email" email="Email" required>
+            <input type="email" name="Email" [(ngModel)]="Email">
             <label>Email</label>
           </div>
         </div>

@@ -8,10 +8,8 @@ import { User } from '../shared/user.model';
 })
 export class SignUpComponent implements OnInit {
   user: User;
-
   constructor() { }
 
   ngOnInit() {
   }
-
 }
